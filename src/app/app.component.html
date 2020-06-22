@@ -1,0 +1,25 @@
+<!--div>
+    <h1 
+    []
+    [style.color]="holivar.nombreLista.length > 0 ? 'green' : 'blue' " >
+        //esta clase binding se aplica direcctamente al html y dice que
+        si la condicion es mayor a 0 cambiara de color
+        Componente app.component.html
+    </h1>
+    <p [class.invisible]="holivar.nombreLista.length == 0">
+        //aqui dice que esta clase de binding se va a ejecutar cuando lo que haya en la caja
+         de texto sea diferente a 0
+        Writing: <strong>{{holivar.nombreLista}}</strong>
+    </p> 
+    //esto sirve para ir escriiendo en tiempo y forma
+</div-->
+<app-navbar></app-navbar>
+
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+<!--aqui va el nombre de la etiqueta del ts-->
+<!--saludar-app #holivar [nombre]="name" (saludar)="onSaludar($event)"></saludar-app>
+las referencias se usan con #, la puedo usar en todo el htmml y el punto sirve para acceder al objeto
+-->

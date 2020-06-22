@@ -1,0 +1,28 @@
+<!--comentario del lo que se hace en consola
+    h1>Mi componente que esta desde el archivo es: </h1>
+<br>
+<small>saludar.component.html</small>
+<input type="text" name="" id="">
+
+<p>
+    Soy una piña xd
+</p-->
+
+<h1>Saludar Commponent</h1>
+<div *ngIf="nombres.length < 5">
+    <!--aqui lo que hace la codicion es ocultar la caja cuando se cumpla 
+    la condicion y este llegue a 5 nombres ingresados-->
+    <input type="text" [(ngModel)]="nombreLista">
+    <br>
+    <button (click)="onButtonClick()">Añadir nombre</button>
+</div>
+
+<p *ngFor="let item of nombres; index as i">
+    <!--aqui decimos que al dar click en el parrafo va a ejercutar la accion del mensaje
+    se borro el evento click y se puso el ciclo ngfor para repetir la accion-->
+    {{i}}: Hola {{item}} 
+    <!--se camio el la variable nombre por l variable item, asi no se
+    toma en cuenta lo del app.comonent
+    i es la variable e contador index y arroja la posicion, pero fue sustituida por i-->
+</p>
+
