@@ -1,9 +1,9 @@
 <h2 class="container bg-dark text-white text-center my-4 py-4">Formulario Alumnos<small>*ngIf</small></h2>
 <hr>
-<form [formGroup]="myForm" (ngSubmit)="saveData()" novalidate>
+<!--form [formGroup]="myForm" (ngSubmit)="saveData()" novalidate>
     <div>
         <label>ID:</label>
-        <input formControlName="id"type="text" placeholder="Id"/>
+        <input formControlName="id"type="text" placeholder="Id" value="myForm.id"/>
     </div>
     <div *ngIf="myForm.get('id').errors && myForm.get('id').dirty">
         <p *ngIf="myForm.get('id').hasError('requerired')">Este campo es requerido</p>
@@ -11,6 +11,6 @@
     <div>
         <button type="submit" [disabled]="myForm.invalid"></button>
     </div>
-</form>
+</form-->
                 
 
